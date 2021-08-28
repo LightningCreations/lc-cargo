@@ -1,4 +1,4 @@
-AC_INIT([lc-cargo], [1.0])
+AC_INIT([lc-cargo], [0.1])
 AC_CONFIG_SRCDIR([install-sh])
 
 AC_CONFIG_MACRO_DIRS([m4/])
@@ -19,6 +19,8 @@ AC_CHECK_LIB([curl],[curl_easy_init],[
 ],[
     AC_MSG_ERROR([Missing required package libcurl])
 ])
+
+AM_MAINTAINER_MODE
 
 AC_CONFIG_FILES([Makefile])
 
